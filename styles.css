@@ -24,7 +24,7 @@
 
 .section__header {
   margin-bottom: 5px;
-  font-size: 2.5rem;
+  font-size: 1.75rem;
   font-weight: 700;
   color: var(--text-dark);
   text-align: center;
@@ -38,7 +38,7 @@
 }
 
 .btn {
-  padding: 0.75rem 1.5rem;
+  padding: 0.875rem 1.75rem;
   outline: none;
   border: none;
   font-size: 1rem;
@@ -48,6 +48,8 @@
   border-radius: 5rem;
   transition: 0.3s;
   cursor: pointer;
+  min-height: 44px;
+  touch-action: manipulation;
 }
 
 .btn:hover {
@@ -109,6 +111,13 @@ nav {
   font-size: 1.5rem;
   color: var(--white);
   cursor: pointer;
+  padding: 0.5rem;
+  min-height: 44px;
+  min-width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  touch-action: manipulation;
 }
 
 .nav__links {
@@ -187,10 +196,10 @@ header::before {
 
 .header__content h1 {
   margin-bottom: 2rem;
-  font-size: 4.5rem;
+  font-size: 2.5rem;
   font-weight: 600;
   color: var(--text-dark);
-  line-height: 5.5rem;
+  line-height: 3rem;
   text-align: center;
 }
 
@@ -199,6 +208,7 @@ header::before {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .header__btns .btn {
@@ -352,7 +362,7 @@ header::before {
 
 .showcase__content h4 {
   margin-bottom: 2rem;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 600;
   color: var(--text-dark);
 }
@@ -362,11 +372,22 @@ header::before {
   color: var(--text-light);
 }
 
-.showcase__content .btn {
-  width: 100%;
+.showcase__btn {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
   margin-top: 2rem;
-  padding: 1.5rem;
+}
+
+.showcase__btn .btn {
+  flex: 1;
+  min-width: 200px;
+  padding: 1.25rem 1.5rem;
   font-weight: 600;
+  text-align: center;
+}
+
+.showcase__btn .btn:first-child {
   color: var(--text-dark);
   background-image: url("assets/header-bg.png");
   background-size: cover;
@@ -389,7 +410,7 @@ header::before {
 }
 
 .banner__card h4 {
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 500;
   color: var(--primary-color);
 }
@@ -598,7 +619,30 @@ footer {
   text-align: center;
 }
 
-@media (width > 540px) {
+/* Mobile First Approach - Base styles above are for mobile */
+
+/* Small devices (landscape phones, 480px and up) */
+@media (min-width: 480px) {
+  .header__content h1 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+  
+  .section__header {
+    font-size: 2rem;
+  }
+  
+  .showcase__content h4 {
+    font-size: 2.5rem;
+  }
+  
+  .banner__card h4 {
+    font-size: 4rem;
+  }
+}
+
+/* Medium devices (tablets, 540px and up) */
+@media (min-width: 540px) {
   .destination__grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -627,9 +671,56 @@ footer {
   .footer__col:last-child {
     grid-area: 2/1/3/2;
   }
+  
+  .header__content h1 {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+  
+  .section__header {
+    font-size: 2.25rem;
+  }
 }
 
-@media (width > 768px) {
+/* Extra small devices (phones in portrait, less than 370px) */
+@media (max-width: 369px) {
+  .header__content h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  
+  .section__header {
+    font-size: 1.5rem;
+  }
+  
+  .showcase__content h4 {
+    font-size: 1.75rem;
+  }
+  
+  .banner__card h4 {
+    font-size: 2.5rem;
+  }
+  
+  .btn {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.9rem;
+  }
+  
+  .header__btns .btn {
+    padding: 0.875rem 1.5rem;
+  }
+  
+  .nav__header {
+    padding: 0.75rem;
+  }
+  
+  .section__container {
+    padding: 3rem 0.75rem;
+  }
+}
+
+/* Large tablets and desktop */
+@media (min-width: 768px) {
   nav {
     position: static;
     padding: 2rem 1rem;
@@ -757,6 +848,32 @@ footer {
   .footer__col:last-child {
     grid-area: unset;
   }
+  
+  /* Trip details responsive styles for tablet+ */
+  .trip__hero__content h1 {
+    font-size: 3.5rem;
+  }
+  
+  .trip__content {
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+  }
+  
+  .trip__main {
+    order: 1;
+  }
+  
+  .trip__sidebar {
+    order: 2;
+  }
+  
+  .trip__includes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .gallery__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (width > 1200px) {
@@ -767,6 +884,354 @@ footer {
   .destination__grid {
     gap: 2rem;
   }
+  
+  /* Trip details desktop styles */
+  .trip__hero {
+    min-height: 70vh;
+  }
+  
+  .trip__hero__content h1 {
+    font-size: 4rem;
+  }
+  
+  .trip__overview {
+    padding: 5rem 1rem;
+  }
+}
+
+/* Trip Details Page Styles - Mobile First */
+.trip__hero {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+  margin-top: 80px;
+}
+
+.trip__hero__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.trip__hero__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.trip__hero__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.trip__hero__content {
+  max-width: 800px;
+  padding: 2rem 1rem;
+  z-index: 1;
+}
+
+.trip__breadcrumb {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.trip__breadcrumb a {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+.trip__breadcrumb span {
+  margin: 0 0.5rem;
+}
+
+.trip__hero__content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.trip__hero__content p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.trip__hero__info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.trip__info__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  backdrop-filter: blur(10px);
+}
+
+.trip__overview {
+  padding: 3rem 1rem;
+}
+
+.trip__content {
+  display: grid;
+  gap: 2rem;
+}
+
+.trip__main {
+  order: 2;
+}
+
+.trip__sidebar {
+  order: 1;
+}
+
+.trip__section {
+  margin-bottom: 3rem;
+}
+
+.trip__section h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.trip__includes {
+  display: grid;
+  gap: 2rem;
+}
+
+.include__category h4 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.include__category h4 i {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+
+.include__category ul {
+  display: grid;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.include__category li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.include__category li::before {
+  content: "✓";
+  color: var(--primary-color);
+  font-weight: bold;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.trip__itinerary {
+  display: grid;
+  gap: 2rem;
+}
+
+.itinerary__day {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.day__number {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  background: var(--primary-color);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.day__content h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.day__content p {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.trip__sidebar {
+  display: grid;
+  gap: 2rem;
+}
+
+.trip__booking__card,
+.trip__info__card,
+.trip__gallery__card {
+  background: var(--white);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--extra-light);
+}
+
+.booking__price {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.price__original {
+  display: block;
+  font-size: 1rem;
+  color: var(--text-light);
+  text-decoration: line-through;
+  margin-bottom: 0.25rem;
+}
+
+.price__current {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.25rem;
+}
+
+.price__per {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.booking__savings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: rgba(40, 135, 255, 0.1);
+  color: var(--primary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.booking__btn {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.booking__features {
+  display: grid;
+  gap: 1rem;
+}
+
+.booking__feature {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.booking__feature i {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+
+.trip__info__card h4,
+.trip__gallery__card h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+}
+
+.info__list {
+  display: grid;
+  gap: 1rem;
+}
+
+.info__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--extra-light);
+}
+
+.info__item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.info__label {
+  font-weight: 600;
+  color: var(--text-dark);
+  font-size: 0.9rem;
+}
+
+.info__value {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.gallery__grid img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.similar__trips {
+  background-color: var(--extra-light);
 }
 
 /* Package Details Page Styles */
