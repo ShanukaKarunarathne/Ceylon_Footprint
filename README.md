@@ -1,2 +1,2 @@
-# Serene_Lanka
-Chani's 3rd officer tourisom project
+# Skywings_17-08-24
+Learn how to create a fully responsive Tour &amp; Travel website design from scratch using HTML, CSS, and JavaScript!

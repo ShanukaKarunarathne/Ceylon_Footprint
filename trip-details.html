@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Trip Details | SKYWINGS</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="index.html" class="logo">Skywings</a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html#home">HOME</a></li>
+        <li><a href="index.html#about">ABOUT</a></li>
+        <li><a href="index.html#tour">TOUR</a></li>
+        <li><a href="package-details.html">PACKAGE</a></li>
+        <li><a href="index.html#contact">CONTACT</a></li>
+        <li><a href="index.html#contact">BOOK TRIP</a></li>
+      </ul>
+      <div class="nav__btns">
+        <button class="btn" onclick="window.location.href='index.html#contact'">BOOK TRIP</button>
+      </div>
+    </nav>
+
+    <!-- Trip Hero Section -->
+    <section class="trip__hero">
+      <div class="trip__hero__bg">
+        <img src="assets/destination-2.jpg" alt="Paris Trip" />
+        <div class="trip__hero__overlay"></div>
+      </div>
+      <div class="trip__hero__content">
+        <div class="trip__breadcrumb">
+          <a href="index.html">Home</a>
+          <span><i class="ri-arrow-right-s-line"></i></span>
+          <a href="package-details.html">Packages</a>
+          <span><i class="ri-arrow-right-s-line"></i></span>
+          <span>Paris Romance Escape</span>
+        </div>
+        <h1>Paris Romance Escape</h1>
+        <p>7 Days of Pure Romance in the City of Lights</p>
+        <div class="trip__hero__info">
+          <div class="trip__info__item">
+            <i class="ri-time-line"></i>
+            <span>7 Days / 6 Nights</span>
+          </div>
+          <div class="trip__info__item">
+            <i class="ri-group-line"></i>
+            <span>2 People</span>
+          </div>
+          <div class="trip__info__item">
+            <i class="ri-map-pin-line"></i>
+            <span>Paris, France</span>
+          </div>
+          <div class="trip__info__item">
+            <i class="ri-star-fill"></i>
+            <span>4.9 Rating</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trip Overview -->
+    <section class="section__container trip__overview">
+      <div class="trip__content">
+        <div class="trip__main">
+          <div class="trip__section">
+            <h2>Trip Overview</h2>
+            <p>
+              Experience the ultimate romantic getaway in Paris, the City of Lights. This carefully crafted 
+              7-day journey takes you through the most iconic landmarks, hidden gems, and romantic spots 
+              that make Paris the world's most beloved destination for couples.
+            </p>
+            <p>
+              From sunrise breakfast at charming cafés to sunset cruises along the Seine, every moment 
+              of your trip is designed to create unforgettable memories with your loved one.
+            </p>
+          </div>
+
+          <div class="trip__section">
+            <h2>What's Included</h2>
+            <div class="trip__includes">
+              <div class="include__category">
+                <h4><i class="ri-home-line"></i> Accommodation</h4>
+                <ul>
+                  <li>6 nights in 5-star hotel near Champs-Élysées</li>
+                  <li>Luxury suite with Eiffel Tower view</li>
+                  <li>Daily housekeeping and room service</li>
+                  <li>Welcome champagne and chocolate</li>
+                </ul>
+              </div>
+              <div class="include__category">
+                <h4><i class="ri-restaurant-line"></i> Meals</h4>
+                <ul>
+                  <li>Daily continental breakfast</li>
+                  <li>3 romantic dinners at Michelin-starred restaurants</li>
+                  <li>Seine river cruise with dinner</li>
+                  <li>Wine tasting experience</li>
+                </ul>
+              </div>
+              <div class="include__category">
+                <h4><i class="ri-car-line"></i> Transportation</h4>
+                <ul>
+                  <li>Round-trip flights from your city</li>
+                  <li>Private airport transfers</li>
+                  <li>Metro passes for 7 days</li>
+                  <li>Private city tour vehicle</li>
+                </ul>
+              </div>
+              <div class="include__category">
+                <h4><i class="ri-ticket-line"></i> Activities</h4>
+                <ul>
+                  <li>Skip-the-line Eiffel Tower access</li>
+                  <li>Louvre Museum private tour</li>
+                  <li>Versailles Palace day trip</li>
+                  <li>Montmartre artist district walking tour</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="trip__section">
+            <h2>Day-by-Day Itinerary</h2>
+            <div class="trip__itinerary">
+              <div class="itinerary__day">
+                <div class="day__number">
+                  <span>01</span>
+                </div>
+                <div class="day__content">
+                  <h4>Arrival & Welcome</h4>
+                  <p><strong>Morning:</strong> Arrival at Charles de Gaulle Airport, private transfer to hotel</p>
+                  <p><strong>Afternoon:</strong> Check-in, welcome champagne, rest and explore hotel surroundings</p>
+                  <p><strong>Evening:</strong> Welcome dinner at hotel's rooftop restaurant with Eiffel Tower views</p>
+                </div>
+              </div>
+              
+              <div class="itinerary__day">
+                <div class="day__number">
+                  <span>02</span>
+                </div>
+                <div class="day__content">
+                  <h4>Iconic Paris</h4>
+                  <p><strong>Morning:</strong> Visit Eiffel Tower with skip-the-line access, photo session</p>
+                  <p><strong>Afternoon:</strong> Seine River cruise with lunch, explore Île de la Cité</p>
+                  <p><strong>Evening:</strong> Romantic dinner at Le Jules Verne restaurant</p>
+                </div>
+              </div>
+              
+              <div class="itinerary__day">
+                <div class="day__number">
+                  <span>03</span>
+                </div>
+                <div class="day__content">
+                  <h4>Art & Culture</h4>
+                  <p><strong>Morning:</strong> Private guided tour of the Louvre Museum</p>
+                  <p><strong>Afternoon:</strong> Stroll through Tuileries Garden, visit Place Vendôme for shopping</p>
+                  <p><strong>Evening:</strong> Free time, optional opera or theater show</p>
+                </div>
+              </div>
+              
+              <div class="itinerary__day">
+                <div class="day__number">
+                  <span>04</span>
+                </div>
+                <div class="day__content">
+                  <h4>Versailles Day Trip</h4>
+                  <p><strong>Morning:</strong> Private transportation to Palace of Versailles</p>
+                  <p><strong>Afternoon:</strong> Guided tour of palace and gardens, lunch at Versailles</p>
+                  <p><strong>Evening:</strong> Return to Paris, dinner at traditional French bistro</p>
+                </div>
+              </div>
+              
+              <div class="itinerary__day">
+                <div class="day__number">
+                  <span>05</span>
+                </div>
+                <div class="day__content">
+                  <h4>Montmartre & Romance</h4>
+                  <p><strong>Morning:</strong> Explore Montmartre district, visit Sacré-Cœur Basilica</p>
+                  <p><strong>Afternoon:</strong> Artist square visit, portrait drawing session</p>
+                  <p><strong>Evening:</strong> Romantic dinner with panoramic city views</p>
+                </div>
+              </div>
+              
+              <div class="itinerary__day">
+                <div class="day__number">
+                  <span>06</span>
+                </div>
+                <div class="day__content">
+                  <h4>Shopping & Relaxation</h4>
+                  <p><strong>Morning:</strong> Shopping on Champs-Élysées and luxury boutiques</p>
+                  <p><strong>Afternoon:</strong> Spa treatment at hotel, wine tasting experience</p>
+                  <p><strong>Evening:</strong> Farewell dinner cruise on the Seine</p>
+                </div>
+              </div>
+              
+              <div class="itinerary__day">
+                <div class="day__number">
+                  <span>07</span>
+                </div>
+                <div class="day__content">
+                  <h4>Departure</h4>
+                  <p><strong>Morning:</strong> Check-out, last-minute souvenir shopping</p>
+                  <p><strong>Afternoon:</strong> Private transfer to airport for departure</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trip__sidebar">
+          <div class="trip__booking__card">
+            <div class="booking__price">
+              <span class="price__original">$2,899</span>
+              <span class="price__current">$2,299</span>
+              <span class="price__per">per person</span>
+            </div>
+            <div class="booking__savings">
+              <i class="ri-price-tag-3-line"></i>
+              <span>Save $600 per person</span>
+            </div>
+            <button class="btn booking__btn" onclick="window.location.href='index.html#contact'">
+              Book This Trip Now
+              <span><i class="ri-arrow-right-line"></i></span>
+            </button>
+            <div class="booking__features">
+              <div class="booking__feature">
+                <i class="ri-shield-check-line"></i>
+                <span>Free Cancellation</span>
+              </div>
+              <div class="booking__feature">
+                <i class="ri-customer-service-2-line"></i>
+                <span>24/7 Support</span>
+              </div>
+              <div class="booking__feature">
+                <i class="ri-secure-payment-line"></i>
+                <span>Secure Payment</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="trip__info__card">
+            <h4>Trip Information</h4>
+            <div class="info__list">
+              <div class="info__item">
+                <span class="info__label">Duration:</span>
+                <span class="info__value">7 Days / 6 Nights</span>
+              </div>
+              <div class="info__item">
+                <span class="info__label">Group Size:</span>
+                <span class="info__value">2 People (Private)</span>
+              </div>
+              <div class="info__item">
+                <span class="info__label">Best Time:</span>
+                <span class="info__value">Apr - Oct</span>
+              </div>
+              <div class="info__item">
+                <span class="info__label">Language:</span>
+                <span class="info__value">English, French</span>
+              </div>
+              <div class="info__item">
+                <span class="info__label">Pick Up:</span>
+                <span class="info__value">Hotel Lobby</span>
+              </div>
+              <div class="info__item">
+                <span class="info__label">Difficulty:</span>
+                <span class="info__value">Easy</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="trip__gallery__card">
+            <h4>Photo Gallery</h4>
+            <div class="gallery__grid">
+              <img src="assets/destination-2.jpg" alt="Paris" />
+              <img src="assets/destination-1.jpg" alt="Paris" />
+              <img src="assets/destination-3.jpg" alt="Paris" />
+              <img src="assets/showcase.jpg" alt="Paris" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Similar Trips -->
+    <section class="section__container similar__trips">
+      <h2 class="section__header">Similar Trips You Might Like</h2>
+      <p class="section__description">
+        Explore other romantic destinations perfect for couples
+      </p>
+      <div class="destination__grid">
+        <div class="destination__card">
+          <img src="assets/destination-1.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>New York Romance</h4>
+              <p>New York City, USA</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.7
+            </div>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="assets/destination-3.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Bali Honeymoon</h4>
+              <p>Bali, Indonesia</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.8
+            </div>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="assets/showcase.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Mediterranean Cruise</h4>
+              <p>Multiple Destinations</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.6
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="index.html" class="logo">Skywings</a>
+          </div>
+          <p>
+            Explore the world with ease and excitement through our comprehensive
+            travel platform. Your journey begins here, where seamless planning
+            meets unforgettable experiences.
+          </p>
+          <ul class="footer__socials">
+            <li>
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-youtube-line"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Flights</a></li>
+            <li><a href="#">Hotels</a></li>
+            <li><a href="#">Cruise</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact Us</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="#">
+                <span><i class="ri-phone-fill"></i></span> +91 9876543210
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-record-mail-line"></i></span> info@skywings
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-map-pin-2-fill"></i></span> New Delhi, India
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Subscribe</h4>
+          <form action="/">
+            <input type="text" placeholder="Enter your email" />
+            <button class="btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 Web Design Mastery. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

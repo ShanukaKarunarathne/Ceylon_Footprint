@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Serene Lanka</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#" class="logo">
+            <img src="assets/logo.png" alt="Serene Lanka Logo" style="height: 100px;">
+          </a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#tour">TOUR</a></li>
+        <li><a href="package-details.html">PACKAGE</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#contact">BOOK TRIP</a></li>
+      </ul>
+      <div class="nav__btns">
+        <button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">BOOK TRIP</button>
+      </div>
+    </nav>
+
+    <header id="home">
+      <div class="header__container">
+        <div class="header__content">
+          <p>EXPLORE THE PEARL OF THE INDIAN OCEAN</p>
+          <h1>Discover the Magic of Sri Lanka!</h1>
+          <div class="header__btns">
+            <button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Book A Trip Now</button>
+            <a href="#"><span><i class="ri-play-circle-fill"></i></span></a>
+          </div>
+        </div>
+        <div class="header__image">
+          <img src="assets/header.png" alt="header" />
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container destination__container" id="about">
+      <h2 class="section__header">Popular Destinations in Sri Lanka</h2>
+      <p class="section__description">
+        Discover the Natural Beauty and Cultural Wonders of Sri Lanka
+      </p>
+      <div class="destination__grid">
+        <div class="destination__card">
+          <img src="assets/sigiriya.jpg" alt="Sigiriya" />
+          <div class="destination__card__details">
+            <div>
+              <h4>The Lion Rock Fortress</h4>
+              <p>Sigiriya</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.9
+            </div>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="assets/ella.jpg" alt="Ella" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Scenic Mountain Escape</h4>
+              <p>Ella</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.8
+            </div>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="assets/galle.jpg" alt="Galle" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Colonial Charm by the Sea</h4>
+              <p>Galle Fort</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.7
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container journey__container" id="tour">
+      <h2 class="section__header">Make Your Sri Lankan Journey Easy!</h2>
+      <p class="section__description">
+        Simple Travel Planning for Unforgettable Adventures
+      </p>
+      <div class="journey__grid">
+        <div class="journey__card">
+          <div class="journey__card__bg">
+            <span><i class="ri-bookmark-3-line"></i></span>
+            <h4>Quick Booking</h4>
+          </div>
+          <div class="journey__card__content">
+            <span><i class="ri-bookmark-3-line"></i></span>
+            <h4>Instant Reservations</h4>
+            <p>
+              Whether it's a safari in Yala or a beach getaway in Mirissa, book your trip instantly with just a few clicks.
+            </p>
+          </div>
+        </div>
+        <div class="journey__card">
+          <div class="journey__card__bg">
+            <span><i class="ri-landscape-fill"></i></span>
+            <h4>Customized Tours</h4>
+          </div>
+          <div class="journey__card__content">
+            <span><i class="ri-landscape-fill"></i></span>
+            <h4>Crafted for You</h4>
+            <p>
+              From cultural journeys in Kandy to whale watching in Trincomalee, we build your perfect Sri Lankan experience.
+            </p>
+          </div>
+        </div>
+        <div class="journey__card">
+          <div class="journey__card__bg">
+            <span><i class="ri-map-2-line"></i></span>
+            <h4>Local Expertise</h4>
+          </div>
+          <div class="journey__card__content">
+            <span><i class="ri-map-2-line"></i></span>
+            <h4>Insider Insights</h4>
+            <p>
+              Get tips from experienced local guides on hidden waterfalls, sacred temples, and authentic food spots.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container showcase__container" id="package">
+      <div class="showcase__image">
+        <img src="assets/srilanka-map.jpg" alt="Sri Lanka Map" />
+      </div>
+      <div class="showcase__content">
+        <h4>UNVEIL SRI LANKA’S TRUE BEAUTY</h4>
+        <p>
+          Serene Lanka is your trusted guide to discovering Sri Lanka’s rich heritage, stunning landscapes, and warm hospitality.
+        </p>
+        <p>
+          Whether you're trekking through lush tea plantations, enjoying the beaches of Unawatuna, or exploring the ancient ruins of Anuradhapura — we ensure your experience is unforgettable.
+        </p>
+        <div class="showcase__btn">
+          <button class="btn" onclick="window.location.href='package-details.html'">
+            View All Packages
+            <span><i class="ri-arrow-right-line"></i></span>
+          </button>
+          <button class="btn" style="margin-left: 1rem;">
+            Book Now
+            <span><i class="ri-arrow-right-line"></i></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container banner__container">
+      <div class="banner__card">
+        <h4>20+</h4>
+        <p>Years in Tourism</p>
+      </div>
+      <div class="banner__card">
+        <h4>25K+</h4>
+        <p>Happy Travelers</p>
+      </div>
+      <div class="banner__card">
+        <h4>4.9</h4>
+        <p>TripAdvisor Rating</p>
+      </div>
+    </section>
+
+    <section class="section__container discover__container">
+      <h2 class="section__header">Why Visit Sri Lanka?</h2>
+      <p class="section__description">
+        Culture, Adventure, Beaches, and More!
+      </p>
+      <div class="discover__grid">
+        <div class="discover__card">
+          <span><i class="ri-leaf-line"></i></span>
+          <h4>Nature & Wildlife</h4>
+          <p>
+            Witness elephants in the wild, hike through misty hills, and explore biodiversity like nowhere else.
+          </p>
+        </div>
+        <div class="discover__card">
+          <span><i class="ri-ancient-pavilion-line"></i></span>
+          <h4>Cultural Heritage</h4>
+          <p>
+            Visit ancient kingdoms, sacred temples, and colonial-era forts that tell stories of 2,500+ years.
+          </p>
+        </div>
+        <div class="discover__card">
+          <span><i class="ri-sun-line"></i></span>
+          <h4>Golden Beaches</h4>
+          <p>
+            Relax on sun-kissed shores in Hikkaduwa, Arugam Bay, and Bentota — perfect for surfing and snorkeling.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container client__container">
+      <h2 class="section__header">What Travelers Say</h2>
+      <p class="section__description">
+        Real experiences from real adventurers around Sri Lanka.
+      </p>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__content">
+                <div class="client__rating">
+                  <span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  Our trip to Sri Lanka was magical. Thanks to Serene Lanka, we got to see Ella, Galle, and Kandy in a completely stress-free way.
+                </p>
+              </div>
+              <div class="client__details">
+                <img src="assets/client-1.jpg" alt="client" />
+                <div>
+                  <h4>Rebecca Miles</h4>
+                  <h5>UK Traveler</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__content">
+                <div class="client__rating">
+                  <span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  From whale watching in Mirissa to spiritual bliss in Anuradhapura, Serene Lanka gave us a memorable honeymoon.
+                </p>
+              </div>
+              <div class="client__details">
+                <img src="assets/client-2.jpg" alt="client" />
+                <div>
+                  <h4>Aditya Rao</h4>
+                  <h5>Indian Tourist</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#" class="logo">Serene Lanka</a>
+          </div>
+          <p>
+            Begin your journey through Sri Lanka with us — from sacred temples to golden beaches, we show you the soul of the island.
+          </p>
+          <ul class="footer__socials">
+            <li><a href="#"><i class="ri-facebook-fill"></i></a></li>
+            <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+            <li><a href="#"><i class="ri-youtube-line"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Packages</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact Us</h4>
+          <ul class="footer__links">
+            <li><a href="#"><i class="ri-phone-fill"></i> +94 77 123 4567</a></li>
+            <li><a href="#"><i class="ri-mail-line"></i> info@serenelanka.lk</a></li>
+            <li><a href="#"><i class="ri-map-pin-2-fill"></i> Colombo, Sri Lanka</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Subscribe</h4>
+          <form action="/">
+            <input type="text" placeholder="Enter your email" />
+            <button class="btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2025 Serene Lanka. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
