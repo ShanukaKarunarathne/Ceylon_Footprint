@@ -1957,6 +1957,75 @@ footer {
   font-size: 0.9rem;
 }
 
+/* WhatsApp Button Styles */
+.whatsapp__btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  animation: pulse 2s infinite;
+}
+
+.whatsapp__btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background: #25d366;
+  color: var(--white);
+  border-radius: 50%;
+  font-size: 1.8rem;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  transition: all 0.3s ease;
+}
+
+.whatsapp__btn a:hover {
+  background: #20ba5a;
+  transform: scale(1.1);
+  box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+/* Mobile WhatsApp button adjustments */
+@media (max-width: 768px) {
+  .whatsapp__btn {
+    bottom: 15px;
+    right: 15px;
+  }
+  
+  .whatsapp__btn a {
+    width: 55px;
+    height: 55px;
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .whatsapp__btn {
+    bottom: 12px;
+    right: 12px;
+  }
+  
+  .whatsapp__btn a {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+}
+
 /* Easy Lanka Package Styles - Mobile First */
 .package__hero2 {
   background: linear-gradient(135deg, 
