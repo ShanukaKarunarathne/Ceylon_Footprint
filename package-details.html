@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Tour Packages | Serene Lanka</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="index.html" class="logo">
+            <img src="assets/logo.png" alt="Serene Lanka Logo" class="logo__img">
+          </a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html#home">HOME</a></li>
+        <li><a href="index.html#about">ABOUT</a></li>
+        <li><a href="index.html#tour">TOUR</a></li>
+        <li><a href="package-details.html">PACKAGE</a></li>
+        <li><a href="index.html#contact">CONTACT</a></li>
+        <li><a href="index.html#contact">BOOK TRIP</a></li>
+      </ul>
+      <div class="nav__btns">
+        <button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">BOOK TRIP</button>
+      </div>
+    </nav>
+
+    <!-- Packages Hero -->
+    <section class="packages__hero">
+      <div class="packages__hero__content">
+        <h1>Sri Lanka Tour Packages</h1>
+        <p>Choose Your Perfect Adventure</p>
+      </div>
+    </section>
+
+    <!-- Main Packages Section -->
+    <section class="section__container packages__main">
+      <div class="packages__grid">
+        
+        <!-- Easy Lanka Package -->
+        <div class="package__card featured">
+          <div class="package__badge">
+            <span class="badge__icon">🌴</span>
+            <span class="badge__text">Most Popular</span>
+          </div>
+          <div class="package__header">
+            <h2>Easy Lanka</h2>
+            <p class="package__tagline">Budget Tour Package</p>
+            <div class="package__rating">
+              <div class="stars">★★★★★</div>
+              <span>4.9 (127 reviews)</span>
+            </div>
+          </div>
+          
+          <div class="package__price">
+            <span class="price__amount">$490</span>
+            <span class="price__per">per person</span>
+            <div class="package__duration">9 Days | 8 Nights | Age 12+</div>
+          </div>
+
+          <div class="package__highlights">
+            <h4>✅ Top Experiences</h4>
+            <ul class="highlights__list">
+              <li><span class="emoji">🗿</span> Sigiriya Rock Fortress</li>
+              <li><span class="emoji">🐘</span> Minneriya Safari</li>
+              <li><span class="emoji">🍃</span> Tea Plantation Tour</li>
+              <li><span class="emoji">🚂</span> Scenic Train to Ella</li>
+              <li><span class="emoji">🐳</span> Mirissa Whale Watching</li>
+              <li><span class="emoji">🏖️</span> Beach Relaxation</li>
+            </ul>
+          </div>
+
+          <div class="package__actions">
+            <button class="btn package__btn primary" onclick="showPackageDetails('easy-lanka')">
+              View Details
+            </button>
+            <button class="btn package__btn secondary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+              Book Now - $490
+            </button>
+          </div>
+        </div>
+
+        <!-- Ceylon Charm Package -->
+        <div class="package__card premium">
+          <div class="package__badge">
+            <span class="badge__icon">🌺</span>
+            <span class="badge__text">Premium</span>
+          </div>
+          <div class="package__header">
+            <h2>Ceylon Charm</h2>
+            <p class="package__tagline">Middle Tour Package</p>
+            <div class="package__rating">
+              <div class="stars">★★★★★</div>
+              <span>4.8 (89 reviews)</span>
+            </div>
+          </div>
+          
+          <div class="package__price">
+            <span class="price__amount">$510</span>
+            <span class="price__per">per person</span>
+            <div class="package__duration">8 Days | 7 Nights | Age 12+</div>
+          </div>
+
+          <div class="package__highlights">
+            <h4>✅ Top Highlights</h4>
+            <ul class="highlights__list">
+              <li><span class="emoji">🗿</span> Sigiriya & Dambulla</li>
+              <li><span class="emoji">🕌</span> Temple of the Tooth</li>
+              <li><span class="emoji">🚂</span> Scenic Train to Ella</li>
+              <li><span class="emoji">🦁</span> Yala Safari</li>
+              <li><span class="emoji">🐳</span> Whale Watching</li>
+              <li><span class="emoji">🏖️</span> Beach Relaxation</li>
+            </ul>
+          </div>
+
+          <div class="package__actions">
+            <button class="btn package__btn primary" onclick="showPackageDetails('ceylon-charm')">
+              View Details
+            </button>
+            <button class="btn package__btn secondary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+              Book Now - $510
+            </button>
+          </div>
+        </div>
+
+        <!-- Royal Sri Lanka Package -->
+        <div class="package__card luxury">
+          <div class="package__badge">
+            <span class="badge__icon">👑</span>
+            <span class="badge__text">Luxury</span>
+          </div>
+          <div class="package__header">
+            <h2>Royal Sri Lanka</h2>
+            <p class="package__tagline">Ultimate Luxury Experience</p>
+            <div class="package__rating">
+              <div class="stars">★★★★★</div>
+              <span>5.0 (45 reviews)</span>
+            </div>
+          </div>
+          
+          <div class="package__price">
+            <span class="price__amount">$1,200</span>
+            <span class="price__per">per person</span>
+            <div class="package__duration">14 Days | 13 Nights | Age 18+</div>
+          </div>
+
+          <div class="package__highlights">
+            <h4>✅ Luxury Experiences</h4>
+            <ul class="highlights__list">
+              <li><span class="emoji">🏰</span> Royal Palace Tours</li>
+              <li><span class="emoji">🛩️</span> Private Helicopter Rides</li>
+              <li><span class="emoji">🍾</span> Michelin Star Dining</li>
+              <li><span class="emoji">💆</span> Spa & Wellness</li>
+              <li><span class="emoji">🏖️</span> Private Beach Access</li>
+              <li><span class="emoji">🚁</span> VIP Transfers</li>
+            </ul>
+          </div>
+
+          <div class="package__actions">
+            <button class="btn package__btn primary" onclick="showPackageDetails('royal-sri-lanka')">
+              View Details
+            </button>
+            <button class="btn package__btn secondary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+              Book Now - $1,200
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ceylon Charm Detailed Section -->
+    <section class="package__details" id="ceylon-charm" style="display: none;">
+      <div class="section__container">
+        <div class="details__header">
+          <button class="btn back__btn" onclick="hidePackageDetails()">
+            <i class="ri-arrow-left-line"></i> Back to Packages
+          </button>
+          <div class="details__title">
+            <span class="details__icon">🌺</span>
+            <h2>Ceylon Charm - Complete Details</h2>
+          </div>
+        </div>
+
+        <div class="details__content">
+          <div class="details__main">
+            <!-- Included Highlights -->
+            <div class="details__section">
+              <h3>✅ Included Highlights</h3>
+              <div class="experiences__detailed">
+                <div class="experience__item">
+                  <span class="exp__icon">🗿</span>
+                  <div>
+                    <h4>Sigiriya Rock Fortress</h4>
+                    <p>Climb the Lion Rock & view royal ruins</p>
+                  </div>
+                </div>
+                <div class="experience__item">
+                  <span class="exp__icon">🕉️</span>
+                  <div>
+                    <h4>Dambulla Cave Temple</h4>
+                    <p>Explore ancient Buddhist murals & statues</p>
+                  </div>
+                </div>
+                <div class="experience__item">
+                  <span class="exp__icon">🕌</span>
+                  <div>
+                    <h4>Temple of the Tooth (Kandy)</h4>
+                    <p>Sacred Buddhist site & cultural dance show</p>
+                  </div>
+                </div>
+                <div class="experience__item">
+                  <span class="exp__icon">🌿</span>
+                  <div>
+                    <h4>Spice Garden + Tea Plantation Tour</h4>
+                    <p>Discover local flavors & Ceylon tea making</p>
+                  </div>
+                </div>
+                <div class="experience__item">
+                  <span class="exp__icon">🚂</span>
+                  <div>
+                    <h4>Scenic Train Ride to Ella</h4>
+                    <p>Ride through misty hills and green tea fields</p>
+                  </div>
+                </div>
+                <div class="experience__item">
+                  <span class="exp__icon">🌉</span>
+                  <div>
+                    <h4>Nine Arch Bridge + Little Adam's Peak</h4>
+                    <p>Ella's must-see hiking gems</p>
+                  </div>
+                </div>
+                <div class="experience__item">
+                  <span class="exp__icon">🦁</span>
+                  <div>
+                    <h4>Yala National Park Safari</h4>
+                    <p>4x4 wildlife adventure with leopards & elephants</p>
+                  </div>
+                </div>
+                <div class="experience__item">
+                  <span class="exp__icon">🐢</span>
+                  <div>
+                    <h4>Galle Dutch Fort + Turtle Hatchery</h4>
+                    <p>History meets conservation</p>
+                  </div>
+                </div>
+                <div class="experience__item">
+                  <span class="exp__icon">🐳</span>
+                  <div>
+                    <h4>Mirissa Whale Watching</h4>
+                    <p>Ocean safari with dolphins and whales</p>
+                  </div>
+                </div>
+                <div class="experience__item">
+                  <span class="exp__icon">🏖️</span>
+                  <div>
+                    <h4>Beach Time in Mirissa</h4>
+                    <p>Swim, relax, and soak in coastal sunsets</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Accommodation & Services -->
+            <div class="details__section">
+              <h3>🛌 Accommodation & Services</h3>
+              <div class="accommodation__info">
+                <div class="acc__item">
+                  <i class="ri-home-line"></i>
+                  <div>
+                    <strong>7 nights at quality mid-range hotels</strong>
+                    <p>Comfortable accommodations with modern amenities</p>
+                  </div>
+                </div>
+                <div class="acc__item">
+                  <i class="ri-restaurant-line"></i>
+                  <div>
+                    <strong>Daily breakfast & dinner included</strong>
+                    <p>Start and end each day with delicious meals</p>
+                  </div>
+                </div>
+                <div class="acc__item">
+                  <i class="ri-plane-line"></i>
+                  <div>
+                    <strong>Airport pickup & drop-off</strong>
+                    <p>Hassle-free transfers included</p>
+                  </div>
+                </div>
+                <div class="acc__item">
+                  <i class="ri-car-line"></i>
+                  <div>
+                    <strong>Private transport with English-speaking chauffeur</strong>
+                    <p>Comfortable vehicle with professional driver</p>
+                  </div>
+                </div>
+                <div class="acc__item">
+                  <i class="ri-drop-line"></i>
+                  <div>
+                    <strong>Bottled water & local insurance</strong>
+                    <p>Stay hydrated and protected throughout your journey</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Not Included -->
+            <div class="details__section">
+              <h3>❌ Not Included</h3>
+              <div class="not__included">
+                <ul class="exclusions__list">
+                  <li><i class="ri-close-circle-line"></i> Entrance fees to attractions</li>
+                  <li><i class="ri-close-circle-line"></i> Lunch meals</li>
+                  <li><i class="ri-close-circle-line"></i> Gratuities for guides and drivers</li>
+                  <li><i class="ri-close-circle-line"></i> Excess luggage fees</li>
+                  <li><i class="ri-close-circle-line"></i> Train tickets (customer purchase)</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Itinerary -->
+            <div class="details__section">
+              <h3>🗺️ 8-Day Itinerary</h3>
+              <div class="itinerary__simple">
+                <div class="day__item">
+                  <span class="day__num">1</span>
+                  <div>
+                    <strong>Airport ➝ Dambulla ➝ Sigiriya</strong>
+                    <p>Dambulla Caves, Elephant Safari</p>
+                  </div>
+                </div>
+                <div class="day__item">
+                  <span class="day__num">2</span>
+                  <div>
+                    <strong>Sigiriya ➝ Kandy</strong>
+                    <p>Sigiriya climb, Spice Garden, Kandy city tour</p>
+                  </div>
+                </div>
+                <div class="day__item">
+                  <span class="day__num">3</span>
+                  <div>
+                    <strong>Kandy ➝ Nuwara Eliya</strong>
+                    <p>Temple of Tooth, Gem Museum, Tea Factory</p>
+                  </div>
+                </div>
+                <div class="day__item">
+                  <span class="day__num">4</span>
+                  <div>
+                    <strong>Nuwara Eliya ➝ Ella</strong>
+                    <p>Train ride, Little Adam's Peak, 9 Arch Bridge</p>
+                  </div>
+                </div>
+                <div class="day__item">
+                  <span class="day__num">5</span>
+                  <div>
+                    <strong>Ella ➝ Yala</strong>
+                    <p>Jeep Safari in Yala National Park</p>
+                  </div>
+                </div>
+                <div class="day__item">
+                  <span class="day__num">6</span>
+                  <div>
+                    <strong>Yala ➝ Mirissa</strong>
+                    <p>Blowhole stop, beach resort check-in</p>
+                  </div>
+                </div>
+                <div class="day__item">
+                  <span class="day__num">7</span>
+                  <div>
+                    <strong>Mirissa ➝ Galle ➝ Mirissa</strong>
+                    <p>Whale watching, Galle Fort, Turtle Hatchery</p>
+                  </div>
+                </div>
+                <div class="day__item">
+                  <span class="day__num">8</span>
+                  <div>
+                    <strong>Mirissa ➝ Airport (Colombo)</strong>
+                    <p>Departure transfer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="details__sidebar">
+            <div class="booking__quick ceylon__charm">
+              <div class="quick__price">
+                <span class="price__big">$510</span>
+                <span class="price__small">per person</span>
+              </div>
+              <button class="btn book__now ceylon__btn" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                🌺 Book Ceylon Charm Now
+              </button>
+              
+              <div class="package__features">
+                <div class="feature__badge">Family-friendly</div>
+                <div class="feature__badge">Customizable</div>
+                <div class="feature__badge">Group Discounts</div>
+              </div>
+              
+              <div class="payment__terms">
+                <h4>💳 Payment Info</h4>
+                <ul>
+                  <li><strong>20% deposit</strong> to confirm your tour</li>
+                  <li><strong>80% balance</strong> due 7 days before arrival</li>
+                  <li><strong>Full payment</strong> required if booking within 10 days</li>
+                  <li>Customer covers bank transfer charges</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Easy Lanka Detailed Section -->
+    <section class="package__details" id="easy-lanka" style="display: none;">
+      <div class="section__container">
+        <div class="details__header">
+          <button class="btn back__btn" onclick="hidePackageDetails()">
+            <i class="ri-arrow-left-line"></i> Back to Packages
+          </button>
+          <div class="details__title">
+            <span class="details__icon">🌴</span>
+            <h2>Easy Lanka - Complete Details</h2>
+          </div>
+        </div>
+
+        <div class="details__content">
+          <div class="details__main">
+            <!-- Included Experiences -->
+            <div class="details__section">
+              <h3>✅ Included Experiences</h3>
+              <div class="experiences__detailed">
+                <div class="experience__item">
+                  <span class="exp__icon">🗿</span>
+                  <div>
+                    <h4>Sigiriya Rock Fortress</h4>
+                    <p>Sunset climb & ancient wonders</p>
+                  </div>
+                </div>
+                <div class="experience__item">
+                  <span class="exp__icon">🏛️</span>
+                  <div>
+                    <h4>Polonnaruwa Ruins</h4>
+                    <p>Explore Sri Lanka's second kingdom</p>
+                  </div>
+                </div>
+                <div class="experience__item">
+                  <span class="exp__icon">🐘</span>
+                  <div>
+                    <h4>Minneriya Safari</h4>
+                    <p>Witness Asia's largest elephant gathering</p>
+                  </div>
+                </div>
+                <div class="experience__item">
+                  <span class="exp__icon">🕌</span>
+                  <div>
+                    <h4>Temple of the Tooth</h4>
+                    <p>Sacred Buddhist relic in Kandy</p>
+                  </div>
+                </div>
+                <div class="experience__item">
+                  <span class="exp__icon">🍃</span>
+                  <div>
+                    <h4>Tea Plantation Tour</h4>
+                    <p>Taste authentic Ceylon tea</p>
+                  </div>
+                </div>
+                <div class="experience__item">
+                  <span class="exp__icon">🚂</span>
+                  <div>
+                    <h4>Scenic Train Ride to Ella</h4>
+                    <p>Through waterfalls & tea hills</p>
+                  </div>
+                </div>
+                <div class="experience__item">
+                  <span class="exp__icon">🌊</span>
+                  <div>
+                    <h4>Nine Arch Bridge + Little Adam's Peak</h4>
+                    <p>Sunrise adventure</p>
+                  </div>
+                </div>
+                <div class="experience__item">
+                  <span class="exp__icon">🦁</span>
+                  <div>
+                    <h4>Yala Jeep Safari</h4>
+                    <p>Spot leopards, elephants & more</p>
+                  </div>
+                </div>
+                <div class="experience__item">
+                  <span class="exp__icon">🐳</span>
+                  <div>
+                    <h4>Mirissa Whale Watching</h4>
+                    <p>Ocean safari in the Indian Sea</p>
+                  </div>
+                </div>
+                <div class="experience__item">
+                  <span class="exp__icon">🏖️</span>
+                  <div>
+                    <h4>Beach Chill Time</h4>
+                    <p>Relax on golden sands of Mirissa</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Accommodation -->
+            <div class="details__section">
+              <h3>🛌 Accommodation & Inclusions</h3>
+              <div class="accommodation__info">
+                <div class="acc__item">
+                  <i class="ri-home-line"></i>
+                  <div>
+                    <strong>8 nights in budget hotels</strong>
+                    <p>Negombo, Sigiriya, Kandy, Ella, Tissamaharama, Mirissa</p>
+                  </div>
+                </div>
+                <div class="acc__item">
+                  <i class="ri-restaurant-line"></i>
+                  <div>
+                    <strong>Breakfast included</strong>
+                    <p>Daily breakfast at all hotels</p>
+                  </div>
+                </div>
+                <div class="acc__item">
+                  <i class="ri-car-line"></i>
+                  <div>
+                    <strong>Private transportation</strong>
+                    <p>With English-speaking driver</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Itinerary -->
+            <div class="details__section">
+              <h3>📆 9-Day Itinerary</h3>
+              <div class="itinerary__simple">
+                <div class="day__item">
+                  <span class="day__num">1</span>
+                  <div>
+                    <strong>Airport ➝ Negombo</strong>
+                    <p>Beach welcome, rest</p>
+                  </div>
+                </div>
+                <div class="day__item">
+                  <span class="day__num">2</span>
+                  <div>
+                    <strong>Negombo ➝ Sigiriya</strong>
+                    <p>Dambulla Cave Temple, Sigiriya climb</p>
+                  </div>
+                </div>
+                <div class="day__item">
+                  <span class="day__num">3</span>
+                  <div>
+                    <strong>Sigiriya ➝ Polonnaruwa</strong>
+                    <p>Ruins, rice & curry, Minneriya Safari</p>
+                  </div>
+                </div>
+                <div class="day__item">
+                  <span class="day__num">4</span>
+                  <div>
+                    <strong>Sigiriya ➝ Kandy</strong>
+                    <p>Spice Garden, Botanical Garden</p>
+                  </div>
+                </div>
+                <div class="day__item">
+                  <span class="day__num">5</span>
+                  <div>
+                    <strong>Kandy ➝ Ella via Nuwara Eliya</strong>
+                    <p>Temple visit, tea factory, train ride</p>
+                  </div>
+                </div>
+                <div class="day__item">
+                  <span class="day__num">6</span>
+                  <div>
+                    <strong>Ella ➝ Tissamaharama</strong>
+                    <p>Nine Arch, Little Adam's Peak, Safari</p>
+                  </div>
+                </div>
+                <div class="day__item">
+                  <span class="day__num">7</span>
+                  <div>
+                    <strong>Tissamaharama ➝ Mirissa</strong>
+                    <p>Waterfalls, Coconut Tree Hill</p>
+                  </div>
+                </div>
+                <div class="day__item">
+                  <span class="day__num">8</span>
+                  <div>
+                    <strong>Mirissa Stay</strong>
+                    <p>Whale watching, beach time</p>
+                  </div>
+                </div>
+                <div class="day__item">
+                  <span class="day__num">9</span>
+                  <div>
+                    <strong>Mirissa ➝ Airport</strong>
+                    <p>Departure</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="details__sidebar">
+            <div class="booking__quick">
+              <div class="quick__price">
+                <span class="price__big">$490</span>
+                <span class="price__small">per person</span>
+              </div>
+              <button class="btn book__now" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                🎁 Book Easy Lanka Now
+              </button>
+              
+              <div class="payment__terms">
+                <h4>💳 Payment Terms</h4>
+                <ul>
+                  <li><strong>20% deposit</strong> to confirm booking</li>
+                  <li><strong>80% balance</strong> due 7 days before arrival</li>
+                  <li><strong>Full payment</strong> required if booking within 10 days</li>
+                  <li>Bank transfer charges covered by customer</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#" class="logo">Serene Lanka</a>
+          </div>
+          <p>
+            Begin your journey through Sri Lanka with us — from sacred temples to golden beaches, we show you the soul of the island.
+          </p>
+          <ul class="footer__socials">
+            <li><a href="#"><i class="ri-facebook-fill"></i></a></li>
+            <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+            <li><a href="#"><i class="ri-youtube-line"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">Destinations</a></li>
+            <li><a href="package-details.html">Packages</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact Us</h4>
+          <ul class="footer__links">
+            <li><a href="#"><i class="ri-phone-fill"></i> +94 77 123 4567</a></li>
+            <li><a href="#"><i class="ri-mail-line"></i> info@serenelanka.lk</a></li>
+            <li><a href="#"><i class="ri-map-pin-2-fill"></i> Colombo, Sri Lanka</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Subscribe</h4>
+          <form action="/">
+            <input type="text" placeholder="Enter your email" />
+            <button class="btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2025 Serene Lanka. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      function showPackageDetails(packageId) {
+        document.querySelector('.packages__main').style.display = 'none';
+        document.getElementById(packageId).style.display = 'block';
+        window.scrollTo(0, 0);
+      }
+
+      function hidePackageDetails() {
+        document.querySelector('.packages__main').style.display = 'block';
+        document.querySelector('.package__details').style.display = 'none';
+        window.scrollTo(0, 0);
+      }
+    </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
