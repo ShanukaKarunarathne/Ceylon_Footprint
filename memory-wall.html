@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Memory Wall - Ceylon Footprint</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="index.html" class="logo">
+            <img src="assets/logo.png" alt="Ceylon Footprint Logo" class="logo__img">
+          </a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="index.html#about">ABOUT</a></li>
+        <li><a href="index.html#tour">TOUR</a></li>
+        <li><a href="package-details.html">PACKAGE</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="memory-wall.html">MEMORIES</a></li>
+      </ul>
+      <div class="nav__btns">
+        <button class="btn" onclick="window.location.href='package-details.html'">BOOK TRIP</button>
+      </div>
+    </nav>
+
+    <!-- Memory Wall Hero Section -->
+    <section class="memory__hero">
+      <div class="memory__hero__overlay"></div>
+      <div class="memory__hero__content">
+        <div class="memory__breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>Memory Wall</span>
+        </div>
+        <h1>Our Memory Wall</h1>
+        <p>Capturing Beautiful Moments with Our Amazing Travelers</p>
+        <div class="memory__hero__stats">
+          <div class="memory__stat">
+            <span><i class="ri-camera-fill"></i></span>
+            <div>
+              <h4>20+</h4>
+              <p>Happy Moments</p>
+            </div>
+          </div>
+          <div class="memory__stat">
+            <span><i class="ri-heart-fill"></i></span>
+            <div>
+              <h4>Countless</h4>
+              <p>Beautiful Memories</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Memory Gallery Section -->
+    <section class="section__container memory__container">
+      <h2 class="section__header">Treasured Moments with Our Travelers</h2>
+      <p class="section__description">
+        Every journey tells a story, and every smile creates a memory. Here are some beautiful moments captured with our wonderful travelers from around the world.
+      </p>
+      
+      <div class="memory__gallery">
+        <!-- Photo 1 -->
+        <div class="memory__card" onclick="openModal('memory1')">
+          <img src="assets/memory1.jpg" alt="Happy travelers at Sigiriya" />
+          <div class="memory__overlay">
+            <div class="memory__info">
+              <h4>Sigiriya Adventure</h4>
+              <p>Amazing group from Germany</p>
+              <span><i class="ri-eye-line"></i> View</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 2 -->
+        <div class="memory__card" onclick="openModal('memory2')">
+          <img src="assets/memory2.jpg" alt="Beach fun in Mirissa" />
+          <div class="memory__overlay">
+            <div class="memory__info">
+              <h4>Mirissa Beach</h4>
+              <p>Beach lovers from Australia</p>
+              <span><i class="ri-eye-line"></i> View</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 3 -->
+        <div class="memory__card" onclick="openModal('memory3')">
+          <img src="assets/memory3.jpg" alt="Tea plantation visit" />
+          <div class="memory__overlay">
+            <div class="memory__info">
+              <h4>Tea Gardens</h4>
+              <p>Nature enthusiasts from UK</p>
+              <span><i class="ri-eye-line"></i> View</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 4 -->
+        <div class="memory__card" onclick="openModal('memory4')">
+          <img src="assets/memory4.jpg" alt="Cultural experience" />
+          <div class="memory__overlay">
+            <div class="memory__info">
+              <h4>Cultural Tour</h4>
+              <p>History buffs from Canada</p>
+              <span><i class="ri-eye-line"></i> View</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 5 -->
+        <div class="memory__card" onclick="openModal('memory5')">
+          <img src="assets/memory5.jpg" alt="Safari adventure" />
+          <div class="memory__overlay">
+            <div class="memory__info">
+              <h4>Yala Safari</h4>
+              <p>Wildlife lovers from USA</p>
+              <span><i class="ri-eye-line"></i> View</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 6 -->
+        <div class="memory__card" onclick="openModal('memory6')">
+          <img src="assets/memory6.jpg" alt="Temple visits" />
+          <div class="memory__overlay">
+            <div class="memory__info">
+              <h4>Sacred Temples</h4>
+              <p>Spiritual journey from Japan</p>
+              <span><i class="ri-eye-line"></i> View</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 7 -->
+        <div class="memory__card" onclick="openModal('memory7')">
+          <img src="assets/memory7.jpg" alt="Train journey" />
+          <div class="memory__overlay">
+            <div class="memory__info">
+              <h4>Hill Country Train</h4>
+              <p>Scenic ride enthusiasts</p>
+              <span><i class="ri-eye-line"></i> View</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 8 -->
+        <div class="memory__card" onclick="openModal('memory8')">
+          <img src="assets/memory8.jpg" alt="Galle Fort exploration" />
+          <div class="memory__overlay">
+            <div class="memory__info">
+              <h4>Galle Fort</h4>
+              <p>Architecture lovers from France</p>
+              <span><i class="ri-eye-line"></i> View</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 9 -->
+        <div class="memory__card" onclick="openModal('memory9')">
+          <img src="assets/memory9.jpg" alt="Waterfall adventure" />
+          <div class="memory__overlay">
+            <div class="memory__info">
+              <h4>Sekumpul Falls</h4>
+              <p>Adventure seekers from Brazil</p>
+              <span><i class="ri-eye-line"></i> View</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 10 -->
+        <div class="memory__card" onclick="openModal('memory10')">
+          <img src="assets/memory10.jpg" alt="Cooking class" />
+          <div class="memory__overlay">
+            <div class="memory__info">
+              <h4>Cooking Class</h4>
+              <p>Food lovers from Italy</p>
+              <span><i class="ri-eye-line"></i> View</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 11 -->
+        <div class="memory__card" onclick="openModal('memory11')">
+          <img src="assets/memory11.jpg" alt="Sunset at Unawatuna" />
+          <div class="memory__overlay">
+            <div class="memory__info">
+              <h4>Unawatuna Sunset</h4>
+              <p>Romantic couple from Spain</p>
+              <span><i class="ri-eye-line"></i> View</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 12 -->
+        <div class="memory__card" onclick="openModal('memory12')">
+          <img src="assets/memory12.jpg" alt="Spice garden tour" />
+          <div class="memory__overlay">
+            <div class="memory__info">
+              <h4>Spice Gardens</h4>
+              <p>Culinary tourists from Sweden</p>
+              <span><i class="ri-eye-line"></i> View</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 13 -->
+        <div class="memory__card" onclick="openModal('memory13')">
+          <img src="assets/memory13.jpg" alt="Whale watching" />
+          <div class="memory__overlay">
+            <div class="memory__info">
+              <h4>Whale Watching</h4>
+              <p>Marine life enthusiasts</p>
+              <span><i class="ri-eye-line"></i> View</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 14 -->
+        <div class="memory__card" onclick="openModal('memory14')">
+          <img src="assets/memory14.jpg" alt="Ella Rock hike" />
+          <div class="memory__overlay">
+            <div class="memory__info">
+              <h4>Ella Rock</h4>
+              <p>Hiking group from Norway</p>
+              <span><i class="ri-eye-line"></i> View</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 15 -->
+        <div class="memory__card" onclick="openModal('memory15')">
+          <img src="assets/memory15.jpg" alt="Local market visit" />
+          <div class="memory__overlay">
+            <div class="memory__info">
+              <h4>Local Markets</h4>
+              <p>Cultural explorers from India</p>
+              <span><i class="ri-eye-line"></i> View</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 16 -->
+        <div class="memory__card" onclick="openModal('memory16')">
+          <img src="assets/memory16.jpg" alt="Traditional dance show" />
+          <div class="memory__overlay">
+            <div class="memory__info">
+              <h4>Cultural Dance</h4>
+              <p>Art lovers from Netherlands</p>
+              <span><i class="ri-eye-line"></i> View</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 17 -->
+        <div class="memory__card" onclick="openModal('memory17')">
+          <img src="assets/memory17.jpg" alt="River safari" />
+          <div class="memory__overlay">
+            <div class="memory__info">
+              <h4>River Safari</h4>
+              <p>Nature photographers</p>
+              <span><i class="ri-eye-line"></i> View</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 18 -->
+        <div class="memory__card" onclick="openModal('memory18')">
+          <img src="assets/memory18.jpg" alt="Ayurveda experience" />
+          <div class="memory__overlay">
+            <div class="memory__info">
+              <h4>Ayurveda Spa</h4>
+              <p>Wellness seekers from Denmark</p>
+              <span><i class="ri-eye-line"></i> View</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 19 -->
+        <div class="memory__card" onclick="openModal('memory19')">
+          <img src="assets/memory19.jpg" alt="Fishing village visit" />
+          <div class="memory__overlay">
+            <div class="memory__info">
+              <h4>Fishing Village</h4>
+              <p>Cultural immersion group</p>
+              <span><i class="ri-eye-line"></i> View</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 20 -->
+        <div class="memory__card" onclick="openModal('memory20')">
+          <img src="assets/memory20.jpg" alt="Group celebration" />
+          <div class="memory__overlay">
+            <div class="memory__info">
+              <h4>Farewell Celebration</h4>
+              <p>Amazing group from Singapore</p>
+              <span><i class="ri-eye-line"></i> View</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="section__container memory__cta">
+      <div class="memory__cta__content">
+        <h2>Create Your Own Memories</h2>
+        <p>Join thousands of happy travelers who have experienced the magic of Sri Lanka with us. Your amazing journey and beautiful memories are just a booking away!</p>
+        <div class="memory__cta__btns">
+          <button class="btn" onclick="window.location.href='package-details.html'">
+            Book Your Journey
+            <span><i class="ri-arrow-right-line"></i></span>
+          </button>
+          <button class="btn memory__btn__secondary" onclick="window.location.href='#contact'">
+            Contact Us
+            <span><i class="ri-phone-line"></i></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal for Image Preview -->
+    <div id="imageModal" class="modal">
+      <div class="modal__content">
+        <span class="modal__close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" src="" alt="" />
+        <div class="modal__info">
+          <h4 id="modalTitle"></h4>
+          <p id="modalDescription"></p>
+        </div>
+      </div>
+    </div>
+
+    <footer id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#" class="logo">Ceylon Footprint</a>
+          </div>
+          <p>
+            Begin your journey through Sri Lanka with us — from sacred temples to golden beaches, we show you the soul of the island.
+          </p>
+          <ul class="footer__socials">
+            <li><a href="#"><i class="ri-facebook-fill"></i></a></li>
+            <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+            <li><a href="#"><i class="ri-youtube-line"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">Destinations</a></li>
+            <li><a href="package-details.html">Packages</a></li>
+            <li><a href="memory-wall.html">Memories</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact Us</h4>
+          <ul class="footer__links">
+            <li><a href="#"><i class="ri-phone-fill"></i> +94 76 758 7476</a></li>
+            <li><a href="#"><i class="ri-mail-line"></i> info@serenelanka.lk</a></li>
+            <li><a href="#"><i class="ri-map-pin-2-fill"></i> Colombo, Sri Lanka</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Subscribe</h4>
+          <form action="/">
+            <input type="text" placeholder="Enter your email" />
+            <button class="btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2025 Ceylon Footprint. All rights reserved.
+      </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <div class="whatsapp__btn">
+      <a href="https://wa.me/94767587476" target="_blank" rel="noopener noreferrer">
+        <i class="ri-whatsapp-line"></i>
+      </a>
+    </div>
+
+    <script src="main.js"></script>
+    <script>
+      // Modal functionality for image preview
+      function openModal(memoryId) {
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalDescription = document.getElementById('modalDescription');
+        
+        // Get the clicked image info
+        const card = document.querySelector(`[onclick="openModal('${memoryId}')"]`);
+        const img = card.querySelector('img');
+        const title = card.querySelector('h4').textContent;
+        const description = card.querySelector('p').textContent;
+        
+        modalImg.src = img.src;
+        modalImg.alt = img.alt;
+        modalTitle.textContent = title;
+        modalDescription.textContent = description;
+        
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+      }
+      
+      function closeModal() {
+        const modal = document.getElementById('imageModal');
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+      
+      // Close modal when clicking outside
+      window.onclick = function(event) {
+        const modal = document.getElementById('imageModal');
+        if (event.target === modal) {
+          closeModal();
+        }
+      }
+    </script>
+  </body>
+</html>
