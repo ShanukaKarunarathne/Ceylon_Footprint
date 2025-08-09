@@ -3447,85 +3447,126 @@ footer {
 .memory__gallery {
   margin-top: 4rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-auto-rows: 300px;
+  gap: 1.5rem;
+  padding: 0 1rem;
 }
 
 .memory__card {
   position: relative;
-  border-radius: 1.5rem;
+  border-radius: 2rem;
   overflow: hidden;
   cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 
+    0 15px 35px rgba(40, 135, 255, 0.1),
+    0 5px 15px rgba(0, 0, 0, 0.08);
+  background: linear-gradient(135deg, 
+    rgba(40, 135, 255, 0.05) 0%, 
+    rgba(255, 255, 255, 0.05) 100%);
+}
+
+.memory__card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, 
+    rgba(40, 135, 255, 0.15) 0%, 
+    transparent 50%, 
+    rgba(40, 135, 255, 0.1) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.memory__card:hover::before {
+  opacity: 1;
 }
 
 .memory__card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  transform: translateY(-15px) scale(1.02);
+  box-shadow: 
+    0 25px 50px rgba(40, 135, 255, 0.2),
+    0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
 .memory__card img {
   width: 100%;
-  height: 250px;
+  height: 100%;
   object-fit: cover;
-  transition: transform 0.3s;
+  transition: all 0.4s ease;
+  filter: brightness(1) saturate(1);
 }
 
 .memory__card:hover img {
   transform: scale(1.1);
+  filter: brightness(1.1) saturate(1.2);
 }
 
-.memory__overlay {
+.memory__glow {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.3) 50%,
-    rgba(0, 0, 0, 0.8) 100%
-  );
-  display: flex;
-  align-items: flex-end;
-  padding: 1.5rem;
-  color: var(--white);
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, 
+    rgba(40, 135, 255, 0.3) 0%, 
+    transparent 70%);
   opacity: 0;
-  transition: opacity 0.3s;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+  z-index: 1;
 }
 
-.memory__card:hover .memory__overlay {
+.memory__card:hover .memory__glow {
   opacity: 1;
 }
 
-.memory__info h4 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+/* Special card sizes for more dynamic layout */
+.memory__card.large {
+  grid-column: span 2;
+  grid-row: span 2;
 }
 
-.memory__info p {
-  font-size: 0.875rem;
-  margin-bottom: 1rem;
-  opacity: 0.9;
+.memory__card.wide {
+  grid-column: span 2;
 }
 
-.memory__info span {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.875rem;
-  font-weight: 500;
-  padding: 0.5rem 1rem;
-  background: var(--primary-color);
-  border-radius: 2rem;
-  transition: 0.3s;
+.memory__card.tall {
+  grid-row: span 2;
 }
 
-.memory__info span:hover {
-  background: var(--primary-color-dark);
+/* Animation on scroll */
+.memory__card {
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.memory__card:nth-child(1) { animation-delay: 0.1s; }
+.memory__card:nth-child(2) { animation-delay: 0.2s; }
+.memory__card:nth-child(3) { animation-delay: 0.3s; }
+.memory__card:nth-child(4) { animation-delay: 0.4s; }
+.memory__card:nth-child(5) { animation-delay: 0.5s; }
+.memory__card:nth-child(6) { animation-delay: 0.6s; }
+.memory__card:nth-child(7) { animation-delay: 0.7s; }
+.memory__card:nth-child(8) { animation-delay: 0.8s; }
+.memory__card:nth-child(9) { animation-delay: 0.9s; }
+.memory__card:nth-child(10) { animation-delay: 1.0s; }
+.memory__card:nth-child(11) { animation-delay: 1.1s; }
+.memory__card:nth-child(12) { animation-delay: 1.2s; }
+.memory__card:nth-child(13) { animation-delay: 1.3s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .memory__cta {
@@ -3671,8 +3712,23 @@ footer {
   }
   
   .memory__gallery {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 250px;
+    gap: 1rem;
+    padding: 0 0.5rem;
+  }
+  
+  /* Reset special sizes on mobile */
+  .memory__card.large,
+  .memory__card.wide,
+  .memory__card.tall {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  
+  /* Make every 3rd card wide on tablet */
+  .memory__card:nth-child(3n) {
+    grid-column: span 2;
   }
   
   .memory__cta__content h2 {
@@ -3692,10 +3748,6 @@ footer {
   .modal__content {
     max-width: 95%;
     margin: 1rem auto;
-  }
-  
-  .modal__info {
-    padding: 1rem;
   }
 }
 
@@ -3720,9 +3772,20 @@ footer {
   
   .memory__gallery {
     grid-template-columns: 1fr;
+    grid-auto-rows: 280px;
+    gap: 1rem;
   }
   
-  .memory__card img {
-    height: 200px;
+  /* Reset all special card sizes on mobile */
+  .memory__card.large,
+  .memory__card.wide,
+  .memory__card.tall,
+  .memory__card:nth-child(3n) {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  
+  .memory__card {
+    border-radius: 1.5rem;
   }
 }
