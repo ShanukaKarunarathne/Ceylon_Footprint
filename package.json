@@ -1,0 +1,28 @@
+{
+  "name": "ceylon-footprint",
+  "version": "1.0.0",
+  "description": "Ceylon Footprint - Sri Lanka Travel Website",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server . -p $PORT",
+    "dev": "npx http-server . -p 8080",
+    "optimize": "node optimize-images.js"
+  },
+  "keywords": [
+    "travel",
+    "sri-lanka",
+    "tourism",
+    "website"
+  ],
+  "author": "Ceylon Footprint",
+  "license": "MIT",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  },
+  "devDependencies": {
+    "sharp": "^0.33.5"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

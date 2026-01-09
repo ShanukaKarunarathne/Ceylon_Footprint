@@ -3,6 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+    <link rel="dns-prefetch" href="https://unpkg.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -42,7 +52,7 @@
     <!-- Trip Hero Section -->
     <section class="trip__hero">
       <div class="trip__hero__bg">
-        <img src="assets/destination-2.jpg" alt="Paris Trip" />
+        <img src="assets/destination-2.jpg" alt="Paris Trip" fetchpriority="high" />
         <div class="trip__hero__overlay"></div>
       </div>
       <div class="trip__hero__content">
@@ -288,10 +298,10 @@
           <div class="trip__gallery__card">
             <h4>Photo Gallery</h4>
             <div class="gallery__grid">
-              <img src="assets/destination-2.jpg" alt="Paris" />
-              <img src="assets/destination-1.jpg" alt="Paris" />
-              <img src="assets/destination-3.jpg" alt="Paris" />
-              <img src="assets/showcase.jpg" alt="Paris" />
+              <img src="assets/destination-2.jpg" alt="Paris" loading="lazy" />
+              <img src="assets/destination-1.jpg" alt="Paris" loading="lazy" />
+              <img src="assets/destination-3.jpg" alt="Paris" loading="lazy" />
+              <img src="assets/showcase.jpg" alt="Paris" loading="lazy" />
             </div>
           </div>
         </div>
@@ -306,7 +316,7 @@
       </p>
       <div class="destination__grid">
         <div class="destination__card">
-          <img src="assets/destination-1.jpg" alt="destination" />
+          <img src="assets/destination-1.jpg" alt="destination" loading="lazy" />
           <div class="destination__card__details">
             <div>
               <h4>New York Romance</h4>
@@ -319,7 +329,7 @@
           </div>
         </div>
         <div class="destination__card">
-          <img src="assets/destination-3.jpg" alt="destination" />
+          <img src="assets/destination-3.jpg" alt="destination" loading="lazy" />
           <div class="destination__card__details">
             <div>
               <h4>Bali Honeymoon</h4>
@@ -332,7 +342,7 @@
           </div>
         </div>
         <div class="destination__card">
-          <img src="assets/showcase.jpg" alt="destination" />
+          <img src="assets/showcase.jpg" alt="destination" loading="lazy" />
           <div class="destination__card__details">
             <div>
               <h4>Mediterranean Cruise</h4>
@@ -419,8 +429,8 @@
       </a>
     </div>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="main.js"></script>
+    <script src="https://unpkg.com/scrollreveal" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="main.js" defer></script>
   </body>
 </html>

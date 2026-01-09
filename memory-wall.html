@@ -3,6 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -75,79 +83,79 @@
       <div class="memory__gallery">
         <!-- Photo 1 -->
         <div class="memory__card large" onclick="openModal('memory1')">
-          <img src="assets/memory1.jpg" alt="Memories with customers" />
+          <img src="assets/memory1.jpg" alt="Memories with customers" loading="lazy" />
           <div class="memory__glow"></div>
         </div>
 
         <!-- Photo 2 -->
         <div class="memory__card" onclick="openModal('memory2')">
-          <img src="assets/memory2.jpg" alt="Memories with customers" />
+          <img src="assets/memory2.jpg" alt="Memories with customers" loading="lazy" />
           <div class="memory__glow"></div>
         </div>
 
         <!-- Photo 3 -->
         <div class="memory__card" onclick="openModal('memory3')">
-          <img src="assets/memory3.jpg" alt="Memories with customers" />
+          <img src="assets/memory3.jpg" alt="Memories with customers" loading="lazy" />
           <div class="memory__glow"></div>
         </div>
 
         <!-- Photo 4 -->
         <div class="memory__card wide" onclick="openModal('memory4')">
-          <img src="assets/memory4.jpg" alt="Memories with customers" />
+          <img src="assets/memory4.jpg" alt="Memories with customers" loading="lazy" />
           <div class="memory__glow"></div>
         </div>
 
         <!-- Photo 5 -->
         <div class="memory__card" onclick="openModal('memory5')">
-          <img src="assets/memory5.jpg" alt="Memories with customers" />
+          <img src="assets/memory5.jpg" alt="Memories with customers" loading="lazy" />
           <div class="memory__glow"></div>
         </div>
 
         <!-- Photo 6 -->
         <div class="memory__card" onclick="openModal('memory6')">
-          <img src="assets/memory6.jpg" alt="Memories with customers" />
+          <img src="assets/memory6.jpg" alt="Memories with customers" loading="lazy" />
           <div class="memory__glow"></div>
         </div>
 
         <!-- Photo 7 -->
         <div class="memory__card tall" onclick="openModal('memory7')">
-          <img src="assets/memory7.jpg" alt="Memories with customers" />
+          <img src="assets/memory7.jpg" alt="Memories with customers" loading="lazy" />
           <div class="memory__glow"></div>
         </div>
 
         <!-- Photo 8 -->
         <div class="memory__card" onclick="openModal('memory8')">
-          <img src="assets/memory8.jpg" alt="Memories with customers" />
+          <img src="assets/memory8.jpg" alt="Memories with customers" loading="lazy" />
           <div class="memory__glow"></div>
         </div>
 
         <!-- Photo 9 -->
         <div class="memory__card" onclick="openModal('memory9')">
-          <img src="assets/memory9.jpg" alt="Memories with customers" />
+          <img src="assets/memory9.jpg" alt="Memories with customers" loading="lazy" />
           <div class="memory__glow"></div>
         </div>
 
         <!-- Photo 10 -->
         <div class="memory__card large" onclick="openModal('memory10')">
-          <img src="assets/memory10.jpg" alt="Memories with customers" />
+          <img src="assets/memory10.jpg" alt="Memories with customers" loading="lazy" />
           <div class="memory__glow"></div>
         </div>
 
         <!-- Photo 11 -->
         <div class="memory__card" onclick="openModal('memory11')">
-          <img src="assets/memory11.jpg" alt="Memories with customers" />
+          <img src="assets/memory11.jpg" alt="Memories with customers" loading="lazy" />
           <div class="memory__glow"></div>
         </div>
 
         <!-- Photo 12 -->
         <div class="memory__card" onclick="openModal('memory12')">
-          <img src="assets/memory12.jpg" alt="Memories with customers" />
+          <img src="assets/memory12.jpg" alt="Memories with customers" loading="lazy" />
           <div class="memory__glow"></div>
         </div>
 
         <!-- Photo 13 -->
         <div class="memory__card wide" onclick="openModal('memory13')">
-          <img src="assets/memory13.jpg" alt="Memories with customers" />
+          <img src="assets/memory13.jpg" alt="Memories with customers" loading="lazy" />
           <div class="memory__glow"></div>
         </div>
       </div>
@@ -231,8 +239,8 @@
       </a>
     </div>
 
-    <script src="main.js"></script>
-    <script>
+    <script src="main.js" defer></script>
+    <script defer>
       // Modal functionality for image preview
       function openModal(memoryId) {
         const modal = document.getElementById('imageModal');

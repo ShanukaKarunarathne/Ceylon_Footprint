@@ -3,6 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+    <link rel="dns-prefetch" href="https://unpkg.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -50,7 +60,7 @@
           </div>
         </div>
         <div class="header__image">
-          <img src="assets/header.png" alt="header" />
+          <img src="assets/header.png" alt="header" fetchpriority="high" />
         </div>
       </div>
     </header>
@@ -62,7 +72,7 @@
       </p>
       <div class="destination__grid">
         <div class="destination__card">
-          <img src="assets/sigiriya.jpg" alt="Sigiriya" />
+          <img src="assets/sigiriya.jpg" alt="Sigiriya" loading="lazy" />
           <div class="destination__card__details">
             <div>
               <h4>The Lion Rock Fortress</h4>
@@ -75,7 +85,7 @@
           </div>
         </div>
         <div class="destination__card">
-          <img src="assets/ella.jpg" alt="Ella" />
+          <img src="assets/ella.jpg" alt="Ella" loading="lazy" />
           <div class="destination__card__details">
             <div>
               <h4>Scenic Mountain Escape</h4>
@@ -88,7 +98,7 @@
           </div>
         </div>
         <div class="destination__card">
-          <img src="assets/galle.jpg" alt="Galle" />
+          <img src="assets/galle.jpg" alt="Galle" loading="lazy" />
           <div class="destination__card__details">
             <div>
               <h4>Colonial Charm by the Sea</h4>
@@ -153,7 +163,7 @@
 
     <section class="section__container showcase__container" id="package">
       <div class="showcase__image">
-        <img src="assets/srilanka-map.jpg" alt="Sri Lanka Map" />
+        <img src="assets/srilanka-map.jpg" alt="Sri Lanka Map" loading="lazy" />
       </div>
       <div class="showcase__content">
         <h4>UNVEIL SRI LANKA’S TRUE BEAUTY</h4>
@@ -239,7 +249,7 @@
                 </p>
               </div>
               <div class="client__details">
-                <img src="assets/client-1.jpg" alt="client" />
+                <img src="assets/client-1.jpg" alt="client" loading="lazy" />
                 <div>
                   <h4>Dakota and Ahmed</h4>
                   <h5>Happy Travelers</h5>
@@ -258,7 +268,7 @@
                 </p>
               </div>
               <div class="client__details">
-                <img src="assets/client-2.jpg" alt="client" />
+                <img src="assets/client-2.jpg" alt="client" loading="lazy" />
                 <div>
                   <h4>Rianne and Niels</h4>
                   <h5>Netherlands</h5>
@@ -277,7 +287,7 @@
                 </p>
               </div>
               <div class="client__details">
-                <img src="assets/client-1.jpg" alt="client" />
+                <img src="assets/client-1.jpg" alt="client" loading="lazy" />
                 <div>
                   <h4>Ernie & John</h4>
                   <h5>Manchester, UK</h5>
@@ -341,8 +351,8 @@
       </a>
     </div>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="main.js"></script>
+    <script src="https://unpkg.com/scrollreveal" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="main.js" defer></script>
   </body>
 </html>
